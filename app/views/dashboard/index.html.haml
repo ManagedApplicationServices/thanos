@@ -1,6 +1,0 @@
-= form_tag({action: :create, controller: :upload}, multipart: true, class: "form-inline") do
-  .form-group
-    = file_field_tag :file, class: "form-control input-lg"
-  .form-group
-    = text_field_tag :filename, nil, class: "form-control input-lg", placeholder: "Output File Name"
-  = submit_tag "Convert", class: "btn btn-primary"
