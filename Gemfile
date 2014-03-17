@@ -5,9 +5,7 @@ gem 'rails', '4.0.4'
 gem 'haml-rails'
 gem 'therubyracer'
 gem 'spreadsheet', '~> 0.9.7'
-
-
-# Use sqlite3 as the database for Active Record
+gem 'figaro'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'

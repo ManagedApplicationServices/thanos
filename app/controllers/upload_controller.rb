@@ -33,6 +33,9 @@ class UploadController < ApplicationController
 
           if all_columns_filled?(row)
             builder.GLInterfaceRow do |b|
+              ENV['column_names'].each_with_index do |column, index|
+                b.send("#{column}=".to_sym, row[index])
+              end
               b.GLEntity(row[0])
               b.GLCode(row[1])
               b.EntityCode(row[2])
