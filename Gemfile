@@ -6,6 +6,7 @@ gem 'haml-rails'
 gem 'therubyracer'
 gem 'spreadsheet', '~> 0.9.7'
 gem 'figaro'
+gem 'puma'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'

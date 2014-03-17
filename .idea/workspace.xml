@@ -5,14 +5,16 @@
     <ignored path="thanos.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/.ruby-gemset" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395019148505" ignored="false" />
-    <file path="/Gemfile" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395039475171" ignored="false" />
+    <file path="/Gemfile" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395040587444" ignored="false" />
     <file path="/index.html.haml" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395038323707" ignored="false" />
     <file path="/application.html.haml" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395036864541" ignored="false" />
     <file path="/routes.rb" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395021419317" ignored="false" />
     <file path="/home_controller.rb" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395019473649" ignored="false" />
     <file path="/dashboard_controller.rb" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395019799086" ignored="false" />
-    <file path="/upload_controller.rb" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395039379316" ignored="false" />
-    <file path="/application.yml" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395039546228" ignored="false" />
+    <file path="/upload_controller.rb" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395040889158" ignored="false" />
+    <file path="/application.yml" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395040113575" ignored="false" />
+    <file path="/load_yml.rb" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395040259699" ignored="false" />
+    <file path="/.gitignore" changelist="fa413f8f-7087-49a0-8637-a5a489cdac0f" time="1395040944892" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,46 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="45" selection-start="308" selection-end="308" vertical-scroll-proportion="-6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="1" selection-start="3051" selection-end="3051" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.055214725">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="25" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,10 +52,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="9" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="upload_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/upload_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="55" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
+            <state line="38" column="28" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="6" selection-start="532" selection-end="532" vertical-scroll-proportion="0.34969324">
               <folding />
             </state>
           </provider>
@@ -105,8 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/.ruby-gemset" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
@@ -117,10 +99,12 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/dashboard/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/upload_controller.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/initializers/load_yml.rb" />
+        <option value="$PROJECT_DIR$/yahoo.yaml" />
         <option value="$PROJECT_DIR$/config/application.yml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/upload_controller.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -186,6 +170,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thanos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thanos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -540,20 +542,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -603,16 +591,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../spanif-rails4/config/initializers/load_config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="0" selection-end="74" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="1" selection-start="3051" selection-end="3051" vertical-scroll-proportion="0.0">
+        <state line="101" column="1" selection-start="3051" selection-end="3051" vertical-scroll-proportion="0.9631902">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="45" selection-start="308" selection-end="308" vertical-scroll-proportion="-6.875">
+        <state line="11" column="45" selection-start="308" selection-end="308" vertical-scroll-proportion="0.2085967">
           <folding />
         </state>
       </provider>
@@ -624,30 +619,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/upload_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="55" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+        <state line="8" column="9" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.yml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/upload_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+        <state line="38" column="28" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.055214725">
+        <state line="19" column="6" selection-start="532" selection-end="532" vertical-scroll-proportion="0.34969324">
           <folding />
         </state>
       </provider>

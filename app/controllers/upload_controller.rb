@@ -33,22 +33,9 @@ class UploadController < ApplicationController
 
           if all_columns_filled?(row)
             builder.GLInterfaceRow do |b|
-              ENV['column_names'].each_with_index do |column, index|
-                b.send("#{column}=".to_sym, row[index])
+              ENV["column_names"].split(",").each_with_index do |column, index|
+                b.__send__(column, row[index])
               end
-              b.GLEntity(row[0])
-              b.GLCode(row[1])
-              b.EntityCode(row[2])
-              b.Year(row[3])
-              b.Period(row[4])
-              b.Reference(row[5])
-              b.Explanation(row[6])
-              b.TransDate(row[7])
-              b.DebitAmt(row[8])
-              b.CreditAmt(row[9])
-              b.CurrencyCode(row[10])
-              b.HomeDebitAmt(row[11])
-              b.HomeCreditAmt(row[12])
             end
           end
         end
