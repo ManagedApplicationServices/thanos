@@ -8,6 +8,7 @@ class UploadController < ApplicationController
     Spreadsheet.client_encoding = 'UTF-8'
     spreadsheet = Spreadsheet.open file.open
     xml = generate_xml(spreadsheet)
+    raise "Row #{@invalid_rows.join(", ")} is a invalid row." if @invalid_rows.size > 0
     raise "DebitAmt and CreditAmt does not tally." if @total_debit.round(2) != @total_credit.round(2)
     raise "HomeDebitAmt and HomeCreditAmt does not tally." if @total_home_debit.round(2) != @total_home_credit.round(2)
 
@@ -16,6 +17,7 @@ class UploadController < ApplicationController
 
   private
   def generate_xml(spreadsheet)
+    @invalid_rows = []
     @total_debit = 0
     @total_credit = 0
     @total_home_debit = 0
@@ -37,6 +39,8 @@ class UploadController < ApplicationController
                 b.__send__(column, row[index])
               end
             end
+          else
+            @invalid_rows << index + 1
           end
         end
       end
