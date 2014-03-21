@@ -26,12 +26,12 @@ class UploadController < ApplicationController
     builder.GLInterface do
       sheet1.each_with_index do |row, index|
         if index != 0
-          @total_debit += row[8].to_f
-          @total_credit += row[9].to_f
-          @total_home_debit += row[11].to_f
-          @total_home_credit += row[12].to_f
-
           if all_columns_filled?(row)
+            @total_debit += row[8].to_f
+            @total_credit += row[9].to_f
+            @total_home_debit += row[11].to_f
+            @total_home_credit += row[12].to_f
+
             builder.GLInterfaceRow do |b|
               ENV["column_names"].split(",").each_with_index do |column, index|
                 b.__send__(column, row[index])
