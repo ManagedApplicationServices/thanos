@@ -49,7 +49,7 @@ class UploadController < ApplicationController
 
   def all_columns_filled?(row)
     (0..12).to_a.each do |i|
-      return false if row[i].to_s.length <= 0
+      return false if row[i].to_s.length <= 0 || row[i].blank?
     end
   end
 end
