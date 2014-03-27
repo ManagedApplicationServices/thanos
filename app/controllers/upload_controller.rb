@@ -27,7 +27,7 @@ class UploadController < ApplicationController
     sheet1 = spreadsheet.worksheet 0
     builder.GLInterface do
       sheet1.each_with_index do |row, index|
-        if index != 0
+        if row_to_include?(row)
           if all_columns_filled?(row)
             @total_debit += row[8].to_f
             @total_credit += row[9].to_f
@@ -45,6 +45,10 @@ class UploadController < ApplicationController
         end
       end
     end
+  end
+
+  def row_to_include?(row)
+    row[0] == "RS"
   end
 
   def all_columns_filled?(row)
