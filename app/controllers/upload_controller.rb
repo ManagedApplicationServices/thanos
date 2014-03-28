@@ -29,14 +29,14 @@ class UploadController < ApplicationController
       sheet1.each_with_index do |row, index|
         if row_to_include?(row)
           if all_columns_filled?(row)
-            @total_debit += row[8].to_f
-            @total_credit += row[9].to_f
-            @total_home_debit += row[11].to_f
-            @total_home_credit += row[12].to_f
+            @total_debit += row[9].to_f
+            @total_credit += row[10].to_f
+            @total_home_debit += row[12].to_f
+            @total_home_credit += row[13].to_f
 
             builder.GLInterfaceRow do |b|
               ENV["column_names"].split(",").each_with_index do |column, index|
-                b.__send__(column, row[index])
+                b.__send__(column, row[index]) unless column == "GLDescription"
               end
             end
           else
@@ -52,7 +52,7 @@ class UploadController < ApplicationController
   end
 
   def all_columns_filled?(row)
-    (0..12).to_a.each do |i|
+    [0,1,3,4,5,6,7,8,11].each do |i|
       return false if row[i].to_s.length <= 0 || row[i].blank?
     end
   end
