@@ -36,7 +36,7 @@ class UploadController < ApplicationController
 
             builder.GLInterfaceRow do |b|
               ENV["column_names"].split(",").each_with_index do |column, index|
-                b.__send__(column, row[index]) unless column == "GLDescription"
+                b.__send__(column, row[index]) if column != "GLDescription"
               end
             end
           else
