@@ -36,7 +36,8 @@ class UploadController < ApplicationController
 
             builder.GLInterfaceRow do |b|
               ENV["column_names"].split(",").each_with_index do |column, index|
-                b.__send__(column, row[index]) if column != "GLDescription"
+                string = row[index].blank? ? 0 : row[index]
+                b.__send__(column, string) if column != "GLDescription"
               end
             end
           else
@@ -53,7 +54,7 @@ class UploadController < ApplicationController
 
   def all_columns_filled?(row)
     [0,1,3,4,5,6,7,8,11].each do |i|
-      return false if row[i].to_s.length <= 0 || row[i].blank?
+      return false if row[i].blank?
     end
   end
 end
