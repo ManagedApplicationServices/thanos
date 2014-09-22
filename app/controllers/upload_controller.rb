@@ -28,6 +28,8 @@ class UploadController < ApplicationController
     builder.GLInterface do
       sheet1.each_with_index do |row, index|
         if row_to_include?(row)
+          raise "Invalid entity code on row #{index + 1}" unless ENTITY_CODES.include?(row[3])
+
           if all_columns_filled?(row)
             @total_debit += row[9].to_f
             @total_credit += row[10].to_f
