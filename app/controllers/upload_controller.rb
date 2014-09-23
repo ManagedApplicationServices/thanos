@@ -8,9 +8,9 @@ class UploadController < ApplicationController
     Spreadsheet.client_encoding = 'UTF-8'
     spreadsheet = Spreadsheet.open file.open
     xml = generate_xml(spreadsheet)
-    raise "Row #{@invalid_rows.join(", ")} is a invalid row." if @invalid_rows.size > 0
-    raise "DebitAmt and CreditAmt does not tally." if @total_debit.round(2) != @total_credit.round(2)
-    raise "HomeDebitAmt and HomeCreditAmt does not tally." if @total_home_debit.round(2) != @total_home_credit.round(2)
+    #raise "Row #{@invalid_rows.join(", ")} is a invalid row." if @invalid_rows.size > 0
+    #raise "DebitAmt and CreditAmt does not tally." if @total_debit.round(2) != @total_credit.round(2)
+    #raise "HomeDebitAmt and HomeCreditAmt does not tally." if @total_home_debit.round(2) != @total_home_credit.round(2)
 
     send_data(xml, type: "text/xml", filename: filename)
   end
@@ -30,7 +30,7 @@ class UploadController < ApplicationController
         if row_to_include?(row)
           #raise "Invalid entity code on row #{index + 1}" unless ENTITY_CODES.include?(row[3])
 
-          if all_columns_filled?(row)
+          #if all_columns_filled?(row)
             @total_debit += row[9].to_f
             @total_credit += row[10].to_f
             @total_home_debit += row[12].to_f
@@ -42,9 +42,9 @@ class UploadController < ApplicationController
                 b.__send__(column, string) if column != "GLDescription"
               end
             end
-          else
-            @invalid_rows << index + 1
-          end
+          #else
+          #  @invalid_rows << index + 1
+          #end
         end
       end
     end
